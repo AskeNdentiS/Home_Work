@@ -14,6 +14,5 @@ public class WhileExamples {
             System.out.println("Bye-bye!");
         } while (i < 3);
 
-        System.out.println("sss");
     }
 }
