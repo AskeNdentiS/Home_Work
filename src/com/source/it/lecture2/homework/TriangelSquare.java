@@ -21,6 +21,7 @@ public class TriangelSquare {
         length = (float) lengthX1X2 + (float) lengthX1X3 + (float) lengthX2X3;
 
         int z = 11111;
+        int s;
 
 
 
