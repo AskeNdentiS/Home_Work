@@ -10,7 +10,7 @@ public class TriangelSquare {
 
         /*your code here*/
 
-        square = (x1*(y2 - y3) + x2*(y3 - y1) + x3*(y1 - y2))/2;
+         square = (float) (x1*(y2 - y3) + x2*(y3 - y1) + x3*(y1 - y2))/2;
 
          double lengthX1X2 = Math.sqrt(Math.pow((x2 - x1),2) + Math.pow((y2 - y1),2));
 
