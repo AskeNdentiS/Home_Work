@@ -2,8 +2,8 @@ package com.source.it.lecture2.homework;
 
 public class ClockAngel {
     public static void main(String[] args) {
-        int hours = 3;
-        int mins = 15;
+        int hours = 11;
+        int mins = 30;
         int result = 0;
 
 
