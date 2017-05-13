@@ -11,12 +11,12 @@ public class ClockAngel {
 
 
         /*Your code here*/
-        double gr = (hours + mins / 60.0) * 30 - mins * 6;
+       double gr = (hours + mins / 60.0) * 30 - mins * 6;
 
-        /*if(gr >= 0 && gr <= 180){
-            result = gr;
-        }*/
+        if(gr >= 0 && gr <= 180){
+            result = (int) gr;
+        }
 
-        System.out.println("Angle between hours and minute narrows is " + gr);
+        System.out.println("Angle between hours and minute narrows is " + result);
     }
 }
