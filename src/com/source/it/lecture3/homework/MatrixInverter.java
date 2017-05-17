@@ -10,6 +10,11 @@ public class MatrixInverter {
                 {7, 5, 4, 1}
         };
     /* Your code here */
-
+        for (int i = 0; i < array[0].length; i++) {
+            System.out.println();
+            for (int j = 0; j < array.length; j++) {
+                System.out.print(array[j][i] + " ");
+            }
+        }
     }
 }
