@@ -39,10 +39,10 @@ public class HugeArraySorter {
         }
         int z = 0;
         for (int i = 0; i < hugeArray.length; i++){
-            while ( count[i-0]>0){
+            while ( count[i]>0){
                 hugeArray[z]=i;
                 z++;
-                count[i-0]--;
+                count[i]--;
             }
         }
 
@@ -55,6 +55,6 @@ public class HugeArraySorter {
         }
 
         System.out.println("Sort successful!!");
-      // System.out.println(Arrays.toString(hugeArray));
+     // System.out.println(Arrays.toString(hugeArray));
     }
 }
