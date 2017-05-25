@@ -44,6 +44,11 @@ public class Stack {
         if (currentPosition < 0) {
             return;
         }
+        if (currentPosition<holder.length-1){
+            int[] arrayMultiplier = new int[holder.length * DEFAULT_CAPACITY_MULTIPLIER];
+            System.arraycopy(holder, 0, arrayMultiplier, 0, currentPosition + 1);
+            System.out.println(Arrays.toString(arrayMultiplier));
+        }
         int[] realStack = new int[currentPosition + 1];
         System.arraycopy(holder, 0, realStack, 0, currentPosition + 1);
         System.out.println(Arrays.toString(realStack));

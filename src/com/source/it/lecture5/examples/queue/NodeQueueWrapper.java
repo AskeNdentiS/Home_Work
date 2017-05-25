@@ -1,15 +1,27 @@
 package com.source.it.lecture5.examples.queue;
 
 public class NodeQueueWrapper {
+
     private QueueNode tail;
+    private QueueNode head;
+     int size = 0;
+
+
+
 
     public NodeQueueWrapper(QueueNode node) {
         tail = node;
+        size++;
     }
+
+
 
     public void addNode(QueueNode node) {
         node.setNext(tail);
         tail = node;
+        size++;
+
+
     }
 
     public QueueNode getHead() {
@@ -50,7 +62,27 @@ public class NodeQueueWrapper {
      * @param position number of the Node starting from the head
      **/
     public void remove(int position) {
-        /*Your code here*/
+            /*Your code here*/
+        QueueNode current=tail;
+        if (size == 0 || position > size){
+            System.out.println("error");
+        }
+        int i = 0;
+        while (current != null) {
+            if (i == position) {
+                current.setValue(0);
+                current.setNext(head);
+                i++;
+                break;
+
+            } else {
+                i++;
+                current = current.getNext();
+            }
+        }
+
+
+
     }
 
     /**
@@ -60,7 +92,7 @@ public class NodeQueueWrapper {
      * @param node node should be inserted at position
      */
     public void addNode(int position, QueueNode node) {
-        /*Your code here*/
+
     }
 
     /**

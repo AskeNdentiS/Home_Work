@@ -2,6 +2,7 @@ package com.source.it.lecture5.examples.queue;
 
 public class QueueNode {
     private int value;
+
     private QueueNode next;
 
     public QueueNode(int value) {

@@ -2,7 +2,7 @@ package com.source.it.lecture5.examples.stack;
 
 public class StackTest {
     public static void main(String[] args) {
-        Stack stack = new Stack(5) {{
+        Stack stack = new Stack() {{
             System.out.println(pop());
             print();
             push(1);
@@ -11,6 +11,11 @@ public class StackTest {
             push(17);
             push(33);
             //ToDo : and this will not work
+            push(179);
+            push(177);
+            push(175);
+            push(174);
+            push(173);
             push(179);
         }};
         stack.print();
