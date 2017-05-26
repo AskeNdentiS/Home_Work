@@ -17,6 +17,8 @@ public class StackTest {
             push(174);
             push(173);
             push(179);
+            push(345);
+            push(234);
         }};
         stack.print();
         System.out.println("Peeking " + stack.peek());
